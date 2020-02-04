@@ -1,0 +1,920 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>World | mist-engine</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">mist-engine</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_engine_ecs_core_world_.html">&quot;engine/ecs-core/World&quot;</a>
+				</li>
+				<li>
+					<a href="_engine_ecs_core_world_.world.html">World</a>
+				</li>
+			</ul>
+			<h1>Class World</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">World</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_engine_ecs_core_world_.world.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_engine_ecs_core_world_.world.html#_entities" class="tsd-kind-icon">_entities</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_engine_ecs_core_world_.world.html#_groups" class="tsd-kind-icon">_groups</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_engine_ecs_core_world_.world.html#_singletoncomponents" class="tsd-kind-icon">_singleton<wbr>Components</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_engine_ecs_core_world_.world.html#active" class="tsd-kind-icon">active</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_engine_ecs_core_world_.world.html#alwaysawakesystems" class="tsd-kind-icon">always<wbr>Awake<wbr>Systems</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_engine_ecs_core_world_.world.html#awakesystems" class="tsd-kind-icon">awake<wbr>Systems</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_engine_ecs_core_world_.world.html#cleanupcomponentstack" class="tsd-kind-icon">clean<wbr>UpComponent<wbr>Stack</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_engine_ecs_core_world_.world.html#cleanupentitystack" class="tsd-kind-icon">clean<wbr>UpEntity<wbr>Stack</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_engine_ecs_core_world_.world.html#componentreactivesystem" class="tsd-kind-icon">component<wbr>Reactive<wbr>System</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_engine_ecs_core_world_.world.html#reactivesystemcomponentinstances" class="tsd-kind-icon">reactive<wbr>System<wbr>Component<wbr>Instances</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_engine_ecs_core_world_.world.html#systems" class="tsd-kind-icon">systems</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_engine_ecs_core_world_.world.html#entities" class="tsd-kind-icon">entities</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_engine_ecs_core_world_.world.html#groups" class="tsd-kind-icon">groups</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_engine_ecs_core_world_.world.html#addentity" class="tsd-kind-icon">add<wbr>Entity</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_engine_ecs_core_world_.world.html#addexecutesystem" class="tsd-kind-icon">add<wbr>Execute<wbr>System</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_engine_ecs_core_world_.world.html#addgroup" class="tsd-kind-icon">add<wbr>Group</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_engine_ecs_core_world_.world.html#addreactivesystem" class="tsd-kind-icon">add<wbr>Reactive<wbr>System</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_engine_ecs_core_world_.world.html#addsystembundle" class="tsd-kind-icon">add<wbr>System<wbr>Bundle</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_engine_ecs_core_world_.world.html#cleanup" class="tsd-kind-icon">clean<wbr>Up</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_engine_ecs_core_world_.world.html#entitieswithcomponents" class="tsd-kind-icon">entities<wbr>With<wbr>Components</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_engine_ecs_core_world_.world.html#getsingletoncomponent" class="tsd-kind-icon">get<wbr>Singleton<wbr>Component</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_engine_ecs_core_world_.world.html#oncomponentevent" class="tsd-kind-icon">on<wbr>Component<wbr>Event</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_engine_ecs_core_world_.world.html#removeentity" class="tsd-kind-icon">remove<wbr>Entity</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_engine_ecs_core_world_.world.html#removeexecutesystem" class="tsd-kind-icon">remove<wbr>Execute<wbr>System</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_engine_ecs_core_world_.world.html#removegroup" class="tsd-kind-icon">remove<wbr>Group</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_engine_ecs_core_world_.world.html#removereactivesystem" class="tsd-kind-icon">remove<wbr>Reactive<wbr>System</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_engine_ecs_core_world_.world.html#tryaddsingletoncomponent" class="tsd-kind-icon">try<wbr>Add<wbr>Singleton<wbr>Component</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_engine_ecs_core_world_.world.html#tryremovesingletoncomponent" class="tsd-kind-icon">try<wbr>Remove<wbr>Singleton<wbr>Component</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_engine_ecs_core_world_.world.html#update" class="tsd-kind-icon">update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_engine_ecs_core_world_.world.html#updateawakesystems" class="tsd-kind-icon">update<wbr>Awake<wbr>Systems</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_engine_ecs_core_world_.world.html#updategroups" class="tsd-kind-icon">update<wbr>Groups</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>World<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_engine_ecs_core_world_.world.html" class="tsd-signature-type">World</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L26">engine/ecs-core/World.ts:26</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_engine_ecs_core_world_.world.html" class="tsd-signature-type">World</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_entities" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _entities</h3>
+					<div class="tsd-signature tsd-kind-icon">_entities<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_engine_ecs_core_entity_.entity.html" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L16">engine/ecs-core/World.ts:16</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_groups" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _groups</h3>
+					<div class="tsd-signature tsd-kind-icon">_groups<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_engine_ecs_core_group_.group.html" class="tsd-signature-type">Group</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L17">engine/ecs-core/World.ts:17</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_singletoncomponents" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _singleton<wbr>Components</h3>
+					<div class="tsd-signature tsd-kind-icon">_singleton<wbr>Components<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_engine_ecs_core_icomponentconstructor_.icomponentconstructor.html" class="tsd-signature-type">IComponentConstructor</a><span class="tsd-signature-symbol">, </span><a href="_engine_ecs_core_component_.component.html" class="tsd-signature-type">Component</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L23">engine/ecs-core/World.ts:23</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="active" class="tsd-anchor"></a>
+					<h3>active</h3>
+					<div class="tsd-signature tsd-kind-icon">active<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L26">engine/ecs-core/World.ts:26</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="alwaysawakesystems" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> always<wbr>Awake<wbr>Systems</h3>
+					<div class="tsd-signature tsd-kind-icon">always<wbr>Awake<wbr>Systems<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_engine_ecs_core_iexecutesystemconstructor_.iexecutesystemconstructor.html" class="tsd-signature-type">IExecuteSystemConstructor</a><span class="tsd-signature-symbol">, </span><a href="_engine_ecs_core_executesystem_.executesystem.html" class="tsd-signature-type">ExecuteSystem</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L20">engine/ecs-core/World.ts:20</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="awakesystems" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> awake<wbr>Systems</h3>
+					<div class="tsd-signature tsd-kind-icon">awake<wbr>Systems<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_engine_ecs_core_executesystem_.executesystem.html" class="tsd-signature-type">ExecuteSystem</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L19">engine/ecs-core/World.ts:19</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="cleanupcomponentstack" class="tsd-anchor"></a>
+					<h3>clean<wbr>UpComponent<wbr>Stack</h3>
+					<div class="tsd-signature tsd-kind-icon">clean<wbr>UpComponent<wbr>Stack<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><a href="_engine_ecs_core_entity_.entity.html" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_engine_ecs_core_icomponentconstructor_.icomponentconstructor.html" class="tsd-signature-type">IComponentConstructor</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L24">engine/ecs-core/World.ts:24</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="cleanupentitystack" class="tsd-anchor"></a>
+					<h3>clean<wbr>UpEntity<wbr>Stack</h3>
+					<div class="tsd-signature tsd-kind-icon">clean<wbr>UpEntity<wbr>Stack<span class="tsd-signature-symbol">:</span> <a href="_engine_ecs_core_entity_.entity.html" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L25">engine/ecs-core/World.ts:25</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="componentreactivesystem" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> component<wbr>Reactive<wbr>System</h3>
+					<div class="tsd-signature tsd-kind-icon">component<wbr>Reactive<wbr>System<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_engine_ecs_core_icomponentconstructor_.icomponentconstructor.html" class="tsd-signature-type">IComponentConstructor</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_engine_ecs_core_reactivesystem_.reactivesystem.html" class="tsd-signature-type">ReactiveSystem</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L21">engine/ecs-core/World.ts:21</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="reactivesystemcomponentinstances" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> reactive<wbr>System<wbr>Component<wbr>Instances</h3>
+					<div class="tsd-signature tsd-kind-icon">reactive<wbr>System<wbr>Component<wbr>Instances<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_engine_ecs_core_ireactivesystemconstructor_.ireactivesystemconstructor.html" class="tsd-signature-type">IReactiveSystemConstructor</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">[</span><a href="../interfaces/_engine_ecs_core_icomponentconstructor_.icomponentconstructor.html" class="tsd-signature-type">IComponentConstructor</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="_engine_ecs_core_reactivesystem_.reactivesystem.html" class="tsd-signature-type">ReactiveSystem</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L22">engine/ecs-core/World.ts:22</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="systems" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> systems</h3>
+					<div class="tsd-signature tsd-kind-icon">systems<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_engine_ecs_core_iexecutesystemconstructor_.iexecutesystemconstructor.html" class="tsd-signature-type">IExecuteSystemConstructor</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">[</span><a href="_engine_ecs_core_executesystem_.executesystem.html" class="tsd-signature-type">ExecuteSystem</a><span class="tsd-signature-symbol">, </span><a href="../modules/_engine_ecs_core_world_.html#awakegroup" class="tsd-signature-type">AwakeGroup</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L18">engine/ecs-core/World.ts:18</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="entities" class="tsd-anchor"></a>
+					<h3>entities</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> entities<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><a href="_engine_ecs_core_entity_.entity.html" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L164">engine/ecs-core/World.ts:164</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><a href="_engine_ecs_core_entity_.entity.html" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="groups" class="tsd-anchor"></a>
+					<h3>groups</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> groups<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><a href="_engine_ecs_core_group_.group.html" class="tsd-signature-type">Group</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L160">engine/ecs-core/World.ts:160</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><a href="_engine_ecs_core_group_.group.html" class="tsd-signature-type">Group</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addentity" class="tsd-anchor"></a>
+					<h3>add<wbr>Entity</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Entity<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_engine_ecs_core_entity_.entity.html" class="tsd-signature-type">Entity</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L58">engine/ecs-core/World.ts:58</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="_engine_ecs_core_entity_.entity.html" class="tsd-signature-type">Entity</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addexecutesystem" class="tsd-anchor"></a>
+					<h3>add<wbr>Execute<wbr>System</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Execute<wbr>System<span class="tsd-signature-symbol">(</span>systemConstructor<span class="tsd-signature-symbol">: </span><a href="../interfaces/_engine_ecs_core_iexecutesystemconstructor_.iexecutesystemconstructor.html" class="tsd-signature-type">IExecuteSystemConstructor</a>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_engine_ecs_core_executesystem_.executesystem.html" class="tsd-signature-type">ExecuteSystem</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L138">engine/ecs-core/World.ts:138</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>systemConstructor: <a href="../interfaces/_engine_ecs_core_iexecutesystemconstructor_.iexecutesystemconstructor.html" class="tsd-signature-type">IExecuteSystemConstructor</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_engine_ecs_core_executesystem_.executesystem.html" class="tsd-signature-type">ExecuteSystem</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addgroup" class="tsd-anchor"></a>
+					<h3>add<wbr>Group</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Group<span class="tsd-signature-symbol">(</span>componentConstructors<span class="tsd-signature-symbol">: </span><a href="../interfaces/_engine_ecs_core_icomponentconstructor_.icomponentconstructor.html" class="tsd-signature-type">IComponentConstructor</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_engine_ecs_core_group_.group.html" class="tsd-signature-type">Group</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L154">engine/ecs-core/World.ts:154</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>componentConstructors: <a href="../interfaces/_engine_ecs_core_icomponentconstructor_.icomponentconstructor.html" class="tsd-signature-type">IComponentConstructor</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_engine_ecs_core_group_.group.html" class="tsd-signature-type">Group</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addreactivesystem" class="tsd-anchor"></a>
+					<h3>add<wbr>Reactive<wbr>System</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Reactive<wbr>System<span class="tsd-signature-symbol">(</span>systemConstructor<span class="tsd-signature-symbol">: </span><a href="../interfaces/_engine_ecs_core_ireactivesystemconstructor_.ireactivesystemconstructor.html" class="tsd-signature-type">IReactiveSystemConstructor</a>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_engine_ecs_core_reactivesystem_.reactivesystem.html" class="tsd-signature-type">ReactiveSystem</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L111">engine/ecs-core/World.ts:111</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>systemConstructor: <a href="../interfaces/_engine_ecs_core_ireactivesystemconstructor_.ireactivesystemconstructor.html" class="tsd-signature-type">IReactiveSystemConstructor</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_engine_ecs_core_reactivesystem_.reactivesystem.html" class="tsd-signature-type">ReactiveSystem</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addsystembundle" class="tsd-anchor"></a>
+					<h3>add<wbr>System<wbr>Bundle</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>System<wbr>Bundle<span class="tsd-signature-symbol">(</span>bundle<span class="tsd-signature-symbol">: </span><a href="../interfaces/_engine_ecs_core_systembundle_.systembundle.html" class="tsd-signature-type">SystemBundle</a>, systemArgs<span class="tsd-signature-symbol">?: </span><a href="../modules/_engine_ecs_core_systembundle_.html#systemargs" class="tsd-signature-type">SystemArgs</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L88">engine/ecs-core/World.ts:88</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bundle: <a href="../interfaces/_engine_ecs_core_systembundle_.systembundle.html" class="tsd-signature-type">SystemBundle</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> systemArgs: <a href="../modules/_engine_ecs_core_systembundle_.html#systemargs" class="tsd-signature-type">SystemArgs</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="cleanup" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> clean<wbr>Up</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">clean<wbr>Up<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L212">engine/ecs-core/World.ts:212</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="entitieswithcomponents" class="tsd-anchor"></a>
+					<h3>entities<wbr>With<wbr>Components</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">entities<wbr>With<wbr>Components<span class="tsd-signature-symbol">(</span>componentConstructors<span class="tsd-signature-symbol">: </span><a href="../interfaces/_engine_ecs_core_icomponentconstructor_.icomponentconstructor.html" class="tsd-signature-type">IComponentConstructor</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><a href="_engine_ecs_core_entity_.entity.html" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L168">engine/ecs-core/World.ts:168</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>componentConstructors: <a href="../interfaces/_engine_ecs_core_icomponentconstructor_.icomponentconstructor.html" class="tsd-signature-type">IComponentConstructor</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><a href="_engine_ecs_core_entity_.entity.html" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getsingletoncomponent" class="tsd-anchor"></a>
+					<h3>get<wbr>Singleton<wbr>Component</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Singleton<wbr>Component<span class="tsd-signature-symbol">(</span>componentCons<span class="tsd-signature-symbol">: </span><a href="../interfaces/_engine_ecs_core_icomponentconstructor_.icomponentconstructor.html" class="tsd-signature-type">IComponentConstructor</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="_engine_ecs_core_component_.component.html" class="tsd-signature-type">Component</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L42">engine/ecs-core/World.ts:42</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>componentCons: <a href="../interfaces/_engine_ecs_core_icomponentconstructor_.icomponentconstructor.html" class="tsd-signature-type">IComponentConstructor</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="_engine_ecs_core_component_.component.html" class="tsd-signature-type">Component</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="oncomponentevent" class="tsd-anchor"></a>
+					<h3>on<wbr>Component<wbr>Event</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Component<wbr>Event<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="_engine_ecs_core_entity_.entity.html" class="tsd-signature-type">Entity</a>, component<span class="tsd-signature-symbol">: </span><a href="_engine_ecs_core_component_.component.html" class="tsd-signature-type">Component</a>, componentEvent<span class="tsd-signature-symbol">: </span><a href="../enums/_engine_ecs_core_componentevent_.componentevent.html" class="tsd-signature-type">ComponentEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L67">engine/ecs-core/World.ts:67</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>entity: <a href="_engine_ecs_core_entity_.entity.html" class="tsd-signature-type">Entity</a></h5>
+								</li>
+								<li>
+									<h5>component: <a href="_engine_ecs_core_component_.component.html" class="tsd-signature-type">Component</a></h5>
+								</li>
+								<li>
+									<h5>componentEvent: <a href="../enums/_engine_ecs_core_componentevent_.componentevent.html" class="tsd-signature-type">ComponentEvent</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="removeentity" class="tsd-anchor"></a>
+					<h3>remove<wbr>Entity</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Entity<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="_engine_ecs_core_entity_.entity.html" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L172">engine/ecs-core/World.ts:172</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>entity: <a href="_engine_ecs_core_entity_.entity.html" class="tsd-signature-type">Entity</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="removeexecutesystem" class="tsd-anchor"></a>
+					<h3>remove<wbr>Execute<wbr>System</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Execute<wbr>System<span class="tsd-signature-symbol">(</span>system<span class="tsd-signature-symbol">: </span><a href="../interfaces/_engine_ecs_core_iexecutesystemconstructor_.iexecutesystemconstructor.html" class="tsd-signature-type">IExecuteSystemConstructor</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L184">engine/ecs-core/World.ts:184</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>system: <a href="../interfaces/_engine_ecs_core_iexecutesystemconstructor_.iexecutesystemconstructor.html" class="tsd-signature-type">IExecuteSystemConstructor</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="removegroup" class="tsd-anchor"></a>
+					<h3>remove<wbr>Group</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Group<span class="tsd-signature-symbol">(</span>group<span class="tsd-signature-symbol">: </span><a href="_engine_ecs_core_group_.group.html" class="tsd-signature-type">Group</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L180">engine/ecs-core/World.ts:180</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>group: <a href="_engine_ecs_core_group_.group.html" class="tsd-signature-type">Group</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="removereactivesystem" class="tsd-anchor"></a>
+					<h3>remove<wbr>Reactive<wbr>System</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Reactive<wbr>System<span class="tsd-signature-symbol">(</span>systemConstructor<span class="tsd-signature-symbol">: </span><a href="../interfaces/_engine_ecs_core_ireactivesystemconstructor_.ireactivesystemconstructor.html" class="tsd-signature-type">IReactiveSystemConstructor</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L126">engine/ecs-core/World.ts:126</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>systemConstructor: <a href="../interfaces/_engine_ecs_core_ireactivesystemconstructor_.ireactivesystemconstructor.html" class="tsd-signature-type">IReactiveSystemConstructor</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="tryaddsingletoncomponent" class="tsd-anchor"></a>
+					<h3>try<wbr>Add<wbr>Singleton<wbr>Component</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">try<wbr>Add<wbr>Singleton<wbr>Component<span class="tsd-signature-symbol">(</span>component<span class="tsd-signature-symbol">: </span><a href="_engine_ecs_core_component_.component.html" class="tsd-signature-type">Component</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L46">engine/ecs-core/World.ts:46</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>component: <a href="_engine_ecs_core_component_.component.html" class="tsd-signature-type">Component</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="tryremovesingletoncomponent" class="tsd-anchor"></a>
+					<h3>try<wbr>Remove<wbr>Singleton<wbr>Component</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">try<wbr>Remove<wbr>Singleton<wbr>Component<span class="tsd-signature-symbol">(</span>componentCons<span class="tsd-signature-symbol">: </span><a href="../interfaces/_engine_ecs_core_icomponentconstructor_.icomponentconstructor.html" class="tsd-signature-type">IComponentConstructor</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L54">engine/ecs-core/World.ts:54</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>componentCons: <a href="../interfaces/_engine_ecs_core_icomponentconstructor_.icomponentconstructor.html" class="tsd-signature-type">IComponentConstructor</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="update" class="tsd-anchor"></a>
+					<h3>update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>deltaTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L223">engine/ecs-core/World.ts:223</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>deltaTime: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="updateawakesystems" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> update<wbr>Awake<wbr>Systems</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Awake<wbr>Systems<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L203">engine/ecs-core/World.ts:203</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="updategroups" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> update<wbr>Groups</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Groups<span class="tsd-signature-symbol">(</span>entity<span class="tsd-signature-symbol">: </span><a href="_engine_ecs_core_entity_.entity.html" class="tsd-signature-type">Entity</a>, event<span class="tsd-signature-symbol">: </span><a href="../enums/_engine_ecs_core_componentevent_.componentevent.html" class="tsd-signature-type">ComponentEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/abc900b/engine/ecs-core/World.ts#L198">engine/ecs-core/World.ts:198</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>entity: <a href="_engine_ecs_core_entity_.entity.html" class="tsd-signature-type">Entity</a></h5>
+								</li>
+								<li>
+									<h5>event: <a href="../enums/_engine_ecs_core_componentevent_.componentevent.html" class="tsd-signature-type">ComponentEvent</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_engine_ecs_core_world_.html">&quot;engine/ecs-<wbr>core/<wbr>World&quot;</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_engine_ecs_core_world_.world.html" class="tsd-kind-icon">World</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_engine_ecs_core_world_.world.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_engine_ecs_core_world_.world.html#_entities" class="tsd-kind-icon">_entities</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_engine_ecs_core_world_.world.html#_groups" class="tsd-kind-icon">_groups</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_engine_ecs_core_world_.world.html#_singletoncomponents" class="tsd-kind-icon">_singleton<wbr>Components</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_engine_ecs_core_world_.world.html#active" class="tsd-kind-icon">active</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_engine_ecs_core_world_.world.html#alwaysawakesystems" class="tsd-kind-icon">always<wbr>Awake<wbr>Systems</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_engine_ecs_core_world_.world.html#awakesystems" class="tsd-kind-icon">awake<wbr>Systems</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_engine_ecs_core_world_.world.html#cleanupcomponentstack" class="tsd-kind-icon">clean<wbr>UpComponent<wbr>Stack</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_engine_ecs_core_world_.world.html#cleanupentitystack" class="tsd-kind-icon">clean<wbr>UpEntity<wbr>Stack</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_engine_ecs_core_world_.world.html#componentreactivesystem" class="tsd-kind-icon">component<wbr>Reactive<wbr>System</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_engine_ecs_core_world_.world.html#reactivesystemcomponentinstances" class="tsd-kind-icon">reactive<wbr>System<wbr>Component<wbr>Instances</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_engine_ecs_core_world_.world.html#systems" class="tsd-kind-icon">systems</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_engine_ecs_core_world_.world.html#entities" class="tsd-kind-icon">entities</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_engine_ecs_core_world_.world.html#groups" class="tsd-kind-icon">groups</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_engine_ecs_core_world_.world.html#addentity" class="tsd-kind-icon">add<wbr>Entity</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_engine_ecs_core_world_.world.html#addexecutesystem" class="tsd-kind-icon">add<wbr>Execute<wbr>System</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_engine_ecs_core_world_.world.html#addgroup" class="tsd-kind-icon">add<wbr>Group</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_engine_ecs_core_world_.world.html#addreactivesystem" class="tsd-kind-icon">add<wbr>Reactive<wbr>System</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_engine_ecs_core_world_.world.html#addsystembundle" class="tsd-kind-icon">add<wbr>System<wbr>Bundle</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_engine_ecs_core_world_.world.html#cleanup" class="tsd-kind-icon">clean<wbr>Up</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_engine_ecs_core_world_.world.html#entitieswithcomponents" class="tsd-kind-icon">entities<wbr>With<wbr>Components</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_engine_ecs_core_world_.world.html#getsingletoncomponent" class="tsd-kind-icon">get<wbr>Singleton<wbr>Component</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_engine_ecs_core_world_.world.html#oncomponentevent" class="tsd-kind-icon">on<wbr>Component<wbr>Event</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_engine_ecs_core_world_.world.html#removeentity" class="tsd-kind-icon">remove<wbr>Entity</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_engine_ecs_core_world_.world.html#removeexecutesystem" class="tsd-kind-icon">remove<wbr>Execute<wbr>System</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_engine_ecs_core_world_.world.html#removegroup" class="tsd-kind-icon">remove<wbr>Group</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_engine_ecs_core_world_.world.html#removereactivesystem" class="tsd-kind-icon">remove<wbr>Reactive<wbr>System</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_engine_ecs_core_world_.world.html#tryaddsingletoncomponent" class="tsd-kind-icon">try<wbr>Add<wbr>Singleton<wbr>Component</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_engine_ecs_core_world_.world.html#tryremovesingletoncomponent" class="tsd-kind-icon">try<wbr>Remove<wbr>Singleton<wbr>Component</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_engine_ecs_core_world_.world.html#update" class="tsd-kind-icon">update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_engine_ecs_core_world_.world.html#updateawakesystems" class="tsd-kind-icon">update<wbr>Awake<wbr>Systems</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_engine_ecs_core_world_.world.html#updategroups" class="tsd-kind-icon">update<wbr>Groups</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_engine_ecs_core_world_.html#awakegroup" class="tsd-kind-icon">Awake<wbr>Group</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
