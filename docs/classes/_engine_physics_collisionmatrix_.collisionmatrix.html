@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ChildrenComponent | mist-engine</title>
+	<title>CollisionMatrix | mist-engine</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_engine_positioning_parentchildrelation_.html">&quot;engine/positioning/ParentChildRelation&quot;</a>
+					<a href="../modules/_engine_physics_collisionmatrix_.html">&quot;engine/physics/CollisionMatrix&quot;</a>
 				</li>
 				<li>
-					<a href="_engine_positioning_parentchildrelation_.childrencomponent.html">ChildrenComponent</a>
+					<a href="_engine_physics_collisionmatrix_.collisionmatrix.html">CollisionMatrix</a>
 				</li>
 			</ul>
-			<h1>Class ChildrenComponent</h1>
+			<h1>Class CollisionMatrix</h1>
 		</div>
 	</div>
 </header>
@@ -76,7 +76,7 @@
 						<a href="_engine_ecs_core_component_.component.html" class="tsd-signature-type">Component</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">ChildrenComponent</span>
+								<span class="target">CollisionMatrix</span>
 							</li>
 						</ul>
 					</li>
@@ -89,20 +89,29 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_engine_positioning_parentchildrelation_.childrencomponent.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_engine_physics_collisionmatrix_.collisionmatrix.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_engine_positioning_parentchildrelation_.childrencomponent.html#children" class="tsd-kind-icon">children</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_engine_positioning_parentchildrelation_.childrencomponent.html#entity" class="tsd-kind-icon">entity</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_engine_physics_collisionmatrix_.collisionmatrix.html#entity" class="tsd-kind-icon">entity</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_engine_physics_collisionmatrix_.collisionmatrix.html#matrix" class="tsd-kind-icon">matrix</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_engine_physics_collisionmatrix_.collisionmatrix.html#n" class="tsd-kind-icon">n</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_engine_physics_collisionmatrix_.collisionmatrix.html#raw" class="tsd-kind-icon">raw</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_engine_positioning_parentchildrelation_.childrencomponent.html#issingleton" class="tsd-kind-icon">is<wbr>Singleton</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_engine_physics_collisionmatrix_.collisionmatrix.html#cancollide" class="tsd-kind-icon">can<wbr>Collide</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_engine_physics_collisionmatrix_.collisionmatrix.html#issingleton" class="tsd-kind-icon">is<wbr>Singleton</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_engine_physics_collisionmatrix_.collisionmatrix.html#setcollision" class="tsd-kind-icon">set<wbr>Collision</a></li>
 							</ul>
 						</section>
 					</div>
@@ -114,38 +123,28 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Children<wbr>Component<span class="tsd-signature-symbol">(</span>children<span class="tsd-signature-symbol">: </span><a href="_engine_ecs_core_entity_.entity.html" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_engine_positioning_parentchildrelation_.childrencomponent.html" class="tsd-signature-type">ChildrenComponent</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Collision<wbr>Matrix<span class="tsd-signature-symbol">(</span>nCollisionLayers<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_engine_physics_collisionmatrix_.collisionmatrix.html" class="tsd-signature-type">CollisionMatrix</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/1fe0067/engine/positioning/ParentChildRelation.ts#L17">engine/positioning/ParentChildRelation.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/1fe0067/engine/physics/CollisionMatrix.ts#L5">engine/physics/CollisionMatrix.ts:5</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>children: <a href="_engine_ecs_core_entity_.entity.html" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> nCollisionLayers: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_engine_positioning_parentchildrelation_.childrencomponent.html" class="tsd-signature-type">ChildrenComponent</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_engine_physics_collisionmatrix_.collisionmatrix.html" class="tsd-signature-type">CollisionMatrix</a></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="children" class="tsd-anchor"></a>
-					<h3>children</h3>
-					<div class="tsd-signature tsd-kind-icon">children<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_engine_ecs_core_entity_.entity.html" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/1fe0067/engine/positioning/ParentChildRelation.ts#L17">engine/positioning/ParentChildRelation.ts:17</a></li>
-						</ul>
-					</aside>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="entity" class="tsd-anchor"></a>
 					<h3>entity</h3>
@@ -157,24 +156,119 @@
 						</ul>
 					</aside>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="matrix" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> matrix</h3>
+					<div class="tsd-signature tsd-kind-icon">matrix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/1fe0067/engine/physics/CollisionMatrix.ts#L4">engine/physics/CollisionMatrix.ts:4</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="n" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> n</h3>
+					<div class="tsd-signature tsd-kind-icon">n<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/1fe0067/engine/physics/CollisionMatrix.ts#L5">engine/physics/CollisionMatrix.ts:5</a></li>
+						</ul>
+					</aside>
+				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="raw" class="tsd-anchor"></a>
+					<h3>raw</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> raw<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/1fe0067/engine/physics/CollisionMatrix.ts#L18">engine/physics/CollisionMatrix.ts:18</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="cancollide" class="tsd-anchor"></a>
+					<h3>can<wbr>Collide</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">can<wbr>Collide<span class="tsd-signature-symbol">(</span>layer1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, layer2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/1fe0067/engine/physics/CollisionMatrix.ts#L27">engine/physics/CollisionMatrix.ts:27</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>layer1: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>layer2: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="issingleton" class="tsd-anchor"></a>
 					<h3>is<wbr>Singleton</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">is<wbr>Singleton<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_engine_ecs_core_component_.component.html">Component</a>.<a href="_engine_ecs_core_component_.component.html#issingleton">isSingleton</a></p>
+								<p>Overrides <a href="_engine_ecs_core_component_.component.html">Component</a>.<a href="_engine_ecs_core_component_.component.html#issingleton">isSingleton</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/1fe0067/engine/ecs-core/Component.ts#L6">engine/ecs-core/Component.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/1fe0067/engine/physics/CollisionMatrix.ts#L14">engine/physics/CollisionMatrix.ts:14</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setcollision" class="tsd-anchor"></a>
+					<h3>set<wbr>Collision</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Collision<span class="tsd-signature-symbol">(</span>layer1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, layer2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, collision<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/1fe0067/engine/physics/CollisionMatrix.ts#L22">engine/physics/CollisionMatrix.ts:22</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>layer1: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>layer2: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collision: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -187,7 +281,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_engine_positioning_parentchildrelation_.html">&quot;engine/positioning/<wbr>Parent<wbr>Child<wbr>Relation&quot;</a>
+						<a href="../modules/_engine_physics_collisionmatrix_.html">&quot;engine/physics/<wbr>Collision<wbr>Matrix&quot;</a>
 					</li>
 				</ul>
 			</nav>
@@ -196,39 +290,36 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_engine_positioning_parentchildrelation_.childrencomponent.html" class="tsd-kind-icon">Children<wbr>Component</a>
+						<a href="_engine_physics_collisionmatrix_.collisionmatrix.html" class="tsd-kind-icon">Collision<wbr>Matrix</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="_engine_positioning_parentchildrelation_.childrencomponent.html#constructor" class="tsd-kind-icon">constructor</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_engine_positioning_parentchildrelation_.childrencomponent.html#children" class="tsd-kind-icon">children</a>
+								<a href="_engine_physics_collisionmatrix_.collisionmatrix.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_engine_positioning_parentchildrelation_.childrencomponent.html#entity" class="tsd-kind-icon">entity</a>
+								<a href="_engine_physics_collisionmatrix_.collisionmatrix.html#entity" class="tsd-kind-icon">entity</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_engine_positioning_parentchildrelation_.childrencomponent.html#issingleton" class="tsd-kind-icon">is<wbr>Singleton</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_engine_physics_collisionmatrix_.collisionmatrix.html#matrix" class="tsd-kind-icon">matrix</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_engine_physics_collisionmatrix_.collisionmatrix.html#n" class="tsd-kind-icon">n</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_engine_physics_collisionmatrix_.collisionmatrix.html#raw" class="tsd-kind-icon">raw</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_engine_physics_collisionmatrix_.collisionmatrix.html#cancollide" class="tsd-kind-icon">can<wbr>Collide</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_engine_physics_collisionmatrix_.collisionmatrix.html#issingleton" class="tsd-kind-icon">is<wbr>Singleton</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_engine_physics_collisionmatrix_.collisionmatrix.html#setcollision" class="tsd-kind-icon">set<wbr>Collision</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_engine_positioning_parentchildrelation_.parentcomponent.html" class="tsd-kind-icon">Parent<wbr>Component</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_engine_positioning_parentchildrelation_.html#addchild" class="tsd-kind-icon">add<wbr>Child</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_engine_positioning_parentchildrelation_.html#getglobaltransform" class="tsd-kind-icon">get<wbr>Global<wbr>Transform</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_engine_positioning_parentchildrelation_.html#getwithoutparent" class="tsd-kind-icon">get<wbr>Without<wbr>Parent</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_engine_positioning_parentchildrelation_.html#removechild" class="tsd-kind-icon">remove<wbr>Child</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
