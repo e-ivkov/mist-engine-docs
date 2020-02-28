@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ImagesLoaded | mist-engine</title>
+	<title>CanvasText | mist-engine</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,19 +56,28 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_engine_canvas_renderer_eventcomponents_.html">&quot;engine/canvas-renderer/EventComponents&quot;</a>
+					<a href="../modules/_engine_canvas_renderer_canvastext_.html">&quot;engine/canvas-renderer/CanvasText&quot;</a>
 				</li>
 				<li>
-					<a href="_engine_canvas_renderer_eventcomponents_.imagesloaded.html">ImagesLoaded</a>
+					<a href="_engine_canvas_renderer_canvastext_.canvastext.html">CanvasText</a>
 				</li>
 			</ul>
-			<h1>Class ImagesLoaded</h1>
+			<h1>Class CanvasText</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Text rendered by <a href="_engine_canvas_renderer_canvasrenderersystem_.canvasrenderersystem.html">CanvasRendererSystem</a> on the canvas element.</p>
+					</div>
+					<p>See <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text">Drawing Text - Styling</a>
+					for styling description.</p>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -76,7 +85,7 @@
 						<a href="_engine_ecs_core_component_.component.html" class="tsd-signature-type">Component</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">ImagesLoaded</span>
+								<span class="target">CanvasText</span>
 							</li>
 						</ul>
 					</li>
@@ -89,26 +98,26 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_engine_canvas_renderer_eventcomponents_.imagesloaded.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_engine_canvas_renderer_canvastext_.canvastext.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_engine_canvas_renderer_eventcomponents_.imagesloaded.html#_request" class="tsd-kind-icon">_request</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_engine_canvas_renderer_eventcomponents_.imagesloaded.html#entity" class="tsd-kind-icon">entity</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Accessors</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_engine_canvas_renderer_eventcomponents_.imagesloaded.html#request" class="tsd-kind-icon">request</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_engine_canvas_renderer_canvastext_.canvastext.html#direction" class="tsd-kind-icon">direction</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_engine_canvas_renderer_canvastext_.canvastext.html#entity" class="tsd-kind-icon">entity</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_engine_canvas_renderer_canvastext_.canvastext.html#fillstyle" class="tsd-kind-icon">fill<wbr>Style</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_engine_canvas_renderer_canvastext_.canvastext.html#font" class="tsd-kind-icon">font</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_engine_canvas_renderer_canvastext_.canvastext.html#maxwidth" class="tsd-kind-icon">max<wbr>Width</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_engine_canvas_renderer_canvastext_.canvastext.html#text" class="tsd-kind-icon">text</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_engine_canvas_renderer_canvastext_.canvastext.html#textalign" class="tsd-kind-icon">text<wbr>Align</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_engine_canvas_renderer_canvastext_.canvastext.html#textbaseline" class="tsd-kind-icon">text<wbr>Baseline</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_engine_canvas_renderer_eventcomponents_.imagesloaded.html#issingleton" class="tsd-kind-icon">is<wbr>Singleton</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_engine_canvas_renderer_canvastext_.canvastext.html#issingleton" class="tsd-kind-icon">is<wbr>Singleton</a></li>
 							</ul>
 						</section>
 					</div>
@@ -120,35 +129,50 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Images<wbr>Loaded<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="_engine_canvas_renderer_imageloadrequest_.imageloadrequest.html" class="tsd-signature-type">ImageLoadRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_engine_canvas_renderer_eventcomponents_.imagesloaded.html" class="tsd-signature-type">ImagesLoaded</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Canvas<wbr>Text<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, font<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, textAlign<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">CanvasTextAlign</span>, fillStyle<span class="tsd-signature-symbol">?: </span><a href="../modules/_engine_canvas_renderer_canvastext_.html#canvasfillstyle" class="tsd-signature-type">CanvasFillStyle</a>, textBaseline<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">CanvasTextBaseline</span>, direction<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">CanvasDirection</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_engine_canvas_renderer_canvastext_.canvastext.html" class="tsd-signature-type">CanvasText</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/7b6e7a4/engine/canvas-renderer/EventComponents.ts#L9">engine/canvas-renderer/EventComponents.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/7b6e7a4/engine/canvas-renderer/CanvasText.ts#L27">engine/canvas-renderer/CanvasText.ts:27</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>request: <a href="_engine_canvas_renderer_imageloadrequest_.imageloadrequest.html" class="tsd-signature-type">ImageLoadRequest</a></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> text: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;&quot;</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> font: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;10px sans-serif&quot;</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> textAlign: <span class="tsd-signature-type">CanvasTextAlign</span><span class="tsd-signature-symbol"> = &quot;start&quot;</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> fillStyle: <a href="../modules/_engine_canvas_renderer_canvastext_.html#canvasfillstyle" class="tsd-signature-type">CanvasFillStyle</a><span class="tsd-signature-symbol"> = &quot;black&quot;</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> textBaseline: <span class="tsd-signature-type">CanvasTextBaseline</span><span class="tsd-signature-symbol"> = &quot;alphabetic&quot;</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> direction: <span class="tsd-signature-type">CanvasDirection</span><span class="tsd-signature-symbol"> = &quot;inherit&quot;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_engine_canvas_renderer_eventcomponents_.imagesloaded.html" class="tsd-signature-type">ImagesLoaded</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_engine_canvas_renderer_canvastext_.canvastext.html" class="tsd-signature-type">CanvasText</a></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="_request" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _request</h3>
-					<div class="tsd-signature tsd-kind-icon">_request<span class="tsd-signature-symbol">:</span> <a href="_engine_canvas_renderer_imageloadrequest_.imageloadrequest.html" class="tsd-signature-type">ImageLoadRequest</a></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="direction" class="tsd-anchor"></a>
+					<h3>direction</h3>
+					<div class="tsd-signature tsd-kind-icon">direction<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CanvasDirection</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/7b6e7a4/engine/canvas-renderer/EventComponents.ts#L5">engine/canvas-renderer/EventComponents.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/7b6e7a4/engine/canvas-renderer/CanvasText.ts#L23">engine/canvas-renderer/CanvasText.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -163,25 +187,70 @@
 						</ul>
 					</aside>
 				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Accessors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
-					<a name="request" class="tsd-anchor"></a>
-					<h3>request</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> request<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_engine_canvas_renderer_imageloadrequest_.imageloadrequest.html" class="tsd-signature-type">ImageLoadRequest</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/7b6e7a4/engine/canvas-renderer/EventComponents.ts#L7">engine/canvas-renderer/EventComponents.ts:7</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="_engine_canvas_renderer_imageloadrequest_.imageloadrequest.html" class="tsd-signature-type">ImageLoadRequest</a></h4>
-						</li>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="fillstyle" class="tsd-anchor"></a>
+					<h3>fill<wbr>Style</h3>
+					<div class="tsd-signature tsd-kind-icon">fill<wbr>Style<span class="tsd-signature-symbol">:</span> <a href="../modules/_engine_canvas_renderer_canvastext_.html#canvasfillstyle" class="tsd-signature-type">CanvasFillStyle</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/7b6e7a4/engine/canvas-renderer/CanvasText.ts#L25">engine/canvas-renderer/CanvasText.ts:25</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="font" class="tsd-anchor"></a>
+					<h3>font</h3>
+					<div class="tsd-signature tsd-kind-icon">font<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/7b6e7a4/engine/canvas-renderer/CanvasText.ts#L17">engine/canvas-renderer/CanvasText.ts:17</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Same syntax as CSS font property string.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="maxwidth" class="tsd-anchor"></a>
+					<h3>max<wbr>Width</h3>
+					<div class="tsd-signature tsd-kind-icon">max<wbr>Width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/7b6e7a4/engine/canvas-renderer/CanvasText.ts#L27">engine/canvas-renderer/CanvasText.ts:27</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="text" class="tsd-anchor"></a>
+					<h3>text</h3>
+					<div class="tsd-signature tsd-kind-icon">text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/7b6e7a4/engine/canvas-renderer/CanvasText.ts#L12">engine/canvas-renderer/CanvasText.ts:12</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="textalign" class="tsd-anchor"></a>
+					<h3>text<wbr>Align</h3>
+					<div class="tsd-signature tsd-kind-icon">text<wbr>Align<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CanvasTextAlign</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/7b6e7a4/engine/canvas-renderer/CanvasText.ts#L19">engine/canvas-renderer/CanvasText.ts:19</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="textbaseline" class="tsd-anchor"></a>
+					<h3>text<wbr>Baseline</h3>
+					<div class="tsd-signature tsd-kind-icon">text<wbr>Baseline<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CanvasTextBaseline</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/7b6e7a4/engine/canvas-renderer/CanvasText.ts#L21">engine/canvas-renderer/CanvasText.ts:21</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
@@ -213,7 +282,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_engine_canvas_renderer_eventcomponents_.html">&quot;engine/canvas-<wbr>renderer/<wbr>Event<wbr>Components&quot;</a>
+						<a href="../modules/_engine_canvas_renderer_canvastext_.html">&quot;engine/canvas-<wbr>renderer/<wbr>Canvas<wbr>Text&quot;</a>
 					</li>
 				</ul>
 			</nav>
@@ -222,27 +291,45 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_engine_canvas_renderer_eventcomponents_.imagesloaded.html" class="tsd-kind-icon">Images<wbr>Loaded</a>
+						<a href="_engine_canvas_renderer_canvastext_.canvastext.html" class="tsd-kind-icon">Canvas<wbr>Text</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="_engine_canvas_renderer_eventcomponents_.imagesloaded.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="_engine_canvas_renderer_canvastext_.canvastext.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_engine_canvas_renderer_eventcomponents_.imagesloaded.html#_request" class="tsd-kind-icon">_request</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_engine_canvas_renderer_canvastext_.canvastext.html#direction" class="tsd-kind-icon">direction</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="_engine_canvas_renderer_eventcomponents_.imagesloaded.html#entity" class="tsd-kind-icon">entity</a>
+								<a href="_engine_canvas_renderer_canvastext_.canvastext.html#entity" class="tsd-kind-icon">entity</a>
 							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-								<a href="_engine_canvas_renderer_eventcomponents_.imagesloaded.html#request" class="tsd-kind-icon">request</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_engine_canvas_renderer_canvastext_.canvastext.html#fillstyle" class="tsd-kind-icon">fill<wbr>Style</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_engine_canvas_renderer_canvastext_.canvastext.html#font" class="tsd-kind-icon">font</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_engine_canvas_renderer_canvastext_.canvastext.html#maxwidth" class="tsd-kind-icon">max<wbr>Width</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_engine_canvas_renderer_canvastext_.canvastext.html#text" class="tsd-kind-icon">text</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_engine_canvas_renderer_canvastext_.canvastext.html#textalign" class="tsd-kind-icon">text<wbr>Align</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_engine_canvas_renderer_canvastext_.canvastext.html#textbaseline" class="tsd-kind-icon">text<wbr>Baseline</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_engine_canvas_renderer_eventcomponents_.imagesloaded.html#issingleton" class="tsd-kind-icon">is<wbr>Singleton</a>
+								<a href="_engine_canvas_renderer_canvastext_.canvastext.html#issingleton" class="tsd-kind-icon">is<wbr>Singleton</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_engine_canvas_renderer_canvastext_.html#canvasfillstyle" class="tsd-kind-icon">Canvas<wbr>Fill<wbr>Style</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
