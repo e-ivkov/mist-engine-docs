@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DebugSystem | mist-engine</title>
+	<title>GroundComponent | mist-engine</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_sample_game_src_debugsystem_.html">&quot;sample-game/src/DebugSystem&quot;</a>
+					<a href="../modules/_sample_game_src_components_.html">&quot;sample-game/src/Components&quot;</a>
 				</li>
 				<li>
-					<a href="_sample_game_src_debugsystem_.debugsystem.html">DebugSystem</a>
+					<a href="_sample_game_src_components_.groundcomponent.html">GroundComponent</a>
 				</li>
 			</ul>
-			<h1>Class DebugSystem</h1>
+			<h1>Class GroundComponent</h1>
 		</div>
 	</div>
 </header>
@@ -73,10 +73,10 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_engine_ecs_core_executesystem_.executesystem.html" class="tsd-signature-type">ExecuteSystem</a>
+						<a href="_engine_ecs_core_component_.component.html" class="tsd-signature-type">Component</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">DebugSystem</span>
+								<span class="target">GroundComponent</span>
 							</li>
 						</ul>
 					</li>
@@ -89,21 +89,21 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_sample_game_src_debugsystem_.debugsystem.html#constructor" class="tsd-kind-icon">constructor</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section tsd-is-private-protected">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_sample_game_src_debugsystem_.debugsystem.html#debuggroup" class="tsd-kind-icon">debug<wbr>Group</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_sample_game_src_debugsystem_.debugsystem.html#world" class="tsd-kind-icon">world</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_sample_game_src_components_.groundcomponent.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_sample_game_src_components_.groundcomponent.html#entity" class="tsd-kind-icon">entity</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_sample_game_src_components_.groundcomponent.html#prevground" class="tsd-kind-icon">prev<wbr>Ground</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_sample_game_src_components_.groundcomponent.html#upper" class="tsd-kind-icon">upper</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_sample_game_src_debugsystem_.debugsystem.html#getawakecondition" class="tsd-kind-icon">get<wbr>Awake<wbr>Condition</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_sample_game_src_debugsystem_.debugsystem.html#update" class="tsd-kind-icon">update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_sample_game_src_components_.groundcomponent.html#issingleton" class="tsd-kind-icon">is<wbr>Singleton</a></li>
 							</ul>
 						</section>
 					</div>
@@ -111,96 +111,84 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Debug<wbr>System<span class="tsd-signature-symbol">(</span>world<span class="tsd-signature-symbol">: </span><a href="_engine_ecs_core_world_.world.html" class="tsd-signature-type">World</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_sample_game_src_debugsystem_.debugsystem.html" class="tsd-signature-type">DebugSystem</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Ground<wbr>Component<span class="tsd-signature-symbol">(</span>upper<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, nextGround<span class="tsd-signature-symbol">?: </span><a href="_sample_game_src_components_.groundcomponent.html" class="tsd-signature-type">GroundComponent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_sample_game_src_components_.groundcomponent.html" class="tsd-signature-type">GroundComponent</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_engine_ecs_core_system_.system.html">System</a>.<a href="_engine_ecs_core_system_.system.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/6fe3141/sample-game/src/DebugSystem.ts#L9">sample-game/src/DebugSystem.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/fd88bc5/sample-game/src/Components.ts#L5">sample-game/src/Components.ts:5</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>world: <a href="_engine_ecs_core_world_.world.html" class="tsd-signature-type">World</a></h5>
+									<h5>upper: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> nextGround: <a href="_sample_game_src_components_.groundcomponent.html" class="tsd-signature-type">GroundComponent</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_sample_game_src_debugsystem_.debugsystem.html" class="tsd-signature-type">DebugSystem</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_sample_game_src_components_.groundcomponent.html" class="tsd-signature-type">GroundComponent</a></h4>
 						</li>
 					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="debuggroup" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> debug<wbr>Group</h3>
-					<div class="tsd-signature tsd-kind-icon">debug<wbr>Group<span class="tsd-signature-symbol">:</span> <a href="_engine_ecs_core_group_.group.html" class="tsd-signature-type">Group</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/6fe3141/sample-game/src/DebugSystem.ts#L9">sample-game/src/DebugSystem.ts:9</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-					<a name="world" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> world</h3>
-					<div class="tsd-signature tsd-kind-icon">world<span class="tsd-signature-symbol">:</span> <a href="_engine_ecs_core_world_.world.html" class="tsd-signature-type">World</a></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_engine_ecs_core_system_.system.html">System</a>.<a href="_engine_ecs_core_system_.system.html#world">world</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/6fe3141/engine/ecs-core/System.ts#L6">engine/ecs-core/System.ts:6</a></li>
-						</ul>
-					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-					<a name="getawakecondition" class="tsd-anchor"></a>
-					<h3>get<wbr>Awake<wbr>Condition</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Awake<wbr>Condition<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_sample_game_src_debugmessage_.debugmessage.html" class="tsd-signature-type">DebugMessage</a><span class="tsd-signature-symbol">[]</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Overrides <a href="_engine_ecs_core_executesystem_.executesystem.html">ExecuteSystem</a>.<a href="_engine_ecs_core_executesystem_.executesystem.html#getawakecondition">getAwakeCondition</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/6fe3141/sample-game/src/DebugSystem.ts#L20">sample-game/src/DebugSystem.ts:20</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="_sample_game_src_debugmessage_.debugmessage.html" class="tsd-signature-type">DebugMessage</a><span class="tsd-signature-symbol">[]</span></h4>
-						</li>
-					</ul>
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="entity" class="tsd-anchor"></a>
+					<h3>entity</h3>
+					<div class="tsd-signature tsd-kind-icon">entity<span class="tsd-signature-symbol">:</span> <a href="_engine_ecs_core_entity_.entity.html" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> = undefined</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_engine_ecs_core_component_.component.html">Component</a>.<a href="_engine_ecs_core_component_.component.html#entity">entity</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/fd88bc5/engine/ecs-core/Component.ts#L4">engine/ecs-core/Component.ts:4</a></li>
+						</ul>
+					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-					<a name="update" class="tsd-anchor"></a>
-					<h3>update</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>deltaTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="prevground" class="tsd-anchor"></a>
+					<h3>prev<wbr>Ground</h3>
+					<div class="tsd-signature tsd-kind-icon">prev<wbr>Ground<span class="tsd-signature-symbol">:</span> <a href="_sample_game_src_components_.groundcomponent.html" class="tsd-signature-type">GroundComponent</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/fd88bc5/sample-game/src/Components.ts#L4">sample-game/src/Components.ts:4</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="upper" class="tsd-anchor"></a>
+					<h3>upper</h3>
+					<div class="tsd-signature tsd-kind-icon">upper<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/fd88bc5/sample-game/src/Components.ts#L5">sample-game/src/Components.ts:5</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="issingleton" class="tsd-anchor"></a>
+					<h3>is<wbr>Singleton</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Singleton<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_engine_ecs_core_executesystem_.executesystem.html">ExecuteSystem</a>.<a href="_engine_ecs_core_executesystem_.executesystem.html#update">update</a></p>
+								<p>Inherited from <a href="_engine_ecs_core_component_.component.html">Component</a>.<a href="_engine_ecs_core_component_.component.html#issingleton">isSingleton</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/6fe3141/sample-game/src/DebugSystem.ts#L16">sample-game/src/DebugSystem.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/eadventurous/mist-engine/blob/fd88bc5/engine/ecs-core/Component.ts#L6">engine/ecs-core/Component.ts:6</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>deltaTime: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -213,36 +201,48 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_sample_game_src_debugsystem_.html">&quot;sample-<wbr>game/src/<wbr>Debug<wbr>System&quot;</a>
+						<a href="../modules/_sample_game_src_components_.html">&quot;sample-<wbr>game/src/<wbr>Components&quot;</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_sample_game_src_components_.flyingstarted.html" class="tsd-kind-icon">Flying<wbr>Started</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_sample_game_src_debugsystem_.debugsystem.html" class="tsd-kind-icon">Debug<wbr>System</a>
+						<a href="_sample_game_src_components_.groundcomponent.html" class="tsd-kind-icon">Ground<wbr>Component</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_sample_game_src_debugsystem_.debugsystem.html#constructor" class="tsd-kind-icon">constructor</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_sample_game_src_components_.groundcomponent.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_sample_game_src_debugsystem_.debugsystem.html#debuggroup" class="tsd-kind-icon">debug<wbr>Group</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_sample_game_src_components_.groundcomponent.html#entity" class="tsd-kind-icon">entity</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_sample_game_src_debugsystem_.debugsystem.html#world" class="tsd-kind-icon">world</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_sample_game_src_components_.groundcomponent.html#prevground" class="tsd-kind-icon">prev<wbr>Ground</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_sample_game_src_debugsystem_.debugsystem.html#getawakecondition" class="tsd-kind-icon">get<wbr>Awake<wbr>Condition</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_sample_game_src_components_.groundcomponent.html#upper" class="tsd-kind-icon">upper</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_sample_game_src_debugsystem_.debugsystem.html#update" class="tsd-kind-icon">update</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_sample_game_src_components_.groundcomponent.html#issingleton" class="tsd-kind-icon">is<wbr>Singleton</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_sample_game_src_components_.playercomponent.html" class="tsd-kind-icon">Player<wbr>Component</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_sample_game_src_components_.rockcomponent.html" class="tsd-kind-icon">Rock<wbr>Component</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_sample_game_src_components_.titletext.html" class="tsd-kind-icon">Title<wbr>Text</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
